@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="bootstrap-layout">
+<head>
+  <title>Page Title</title>
+  
+  <!-- Material Design Icons  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Roboto Web Font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  
+  <%= csrf_meta_tags %>
+
+</head>
+<body class="layout-container ls-top-navbar si-l3-md-up">
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-light bg-white navbar-full navbar-fixed-top ls-left-sidebar">    
+		<!-- Sidebar toggle -->
+    	<button class="navbar-toggler pull-xs-left hidden-md-up" type="button" data-toggle="sidebar" data-target="#sidebarLeft"><span class="material-icons">menu</span></button>
+
+		<!-- Brand -->
+		<a class="navbar-brand first-child-md" href="index.html">Buttons</a>
+	</nav>
+	<!-- // END Navbar -->
+
+	<!-- Sidebar -->
+	<div class="sidebar sidebar-left si-si-3 sidebar-visible-md-up sidebar-dark bg-primary" id="sidebarLeft" data-scrollable>
+		<!-- Brand -->
+		<a href="index.html" class="sidebar-brand">
+			<i class="material-icons">control_point</i> AdminPlus
+		</a>
+
+		<!-- Menu -->
+		<ul class="sidebar-menu sm-bordered sm-active-button-bg">
+			<li class="sidebar-menu-item">
+				<a class="sidebar-menu-button" href="index.html">
+					<i class="sidebar-menu-icon material-icons">home</i> Dashboard
+				</a>
+			</li>
+		</ul>
+		<!-- // END Menu -->
+	</div>
+	<!-- // END Sidebar -->
+
+	<!-- CONTENT -->
+	<div class="layout-content" data-scrollable>
+		<div class="container-fluid">
+			<%= yield %>
+			<!-- END CONTENT -->
+		</div>
+	</div>
+
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	
+</body>
+</html>

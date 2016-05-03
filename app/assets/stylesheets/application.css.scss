@@ -1,0 +1,11 @@
+/* 
+ *= require_tree .
+ */
+
+@import 'sass-md-colors/colors/variables';
+
+$brand-primary: $red-500;
+
+@import 'adminplus/src/sass/variables';
+
+@import 'adminplus/src/sass/style';
