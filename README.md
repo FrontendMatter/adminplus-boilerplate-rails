@@ -1,5 +1,5 @@
 # AdminPlus Rails Boilerplate
-Ruby on Rails boilerplate for [AdminPlus Lite Bootstrap Theme](https://github.com/themekit/adminplus).
+Basic Ruby on Rails boilerplate for [AdminPlus Lite Bootstrap Theme](https://github.com/themekit/adminplus).
 
 ### Demo
 > You can [see a working live demo](#) of this boilerplate.
