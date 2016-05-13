@@ -26,7 +26,7 @@ rvm --force install 2.3.1
 rvm --default use 2.3.1
 ```
 
-> Install bundler and Rails:
+> Install Bundler and Rails:
 
 ```bash
 gem install bundle
