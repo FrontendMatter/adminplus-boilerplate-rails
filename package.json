@@ -1,7 +1,7 @@
 {
   "name": "adminplus-boilerplate-rails",
   "description": "Rails app boilerplate using AdminPlus Lite and Bootstrap Layout",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "directories": {
     "test": "test"
