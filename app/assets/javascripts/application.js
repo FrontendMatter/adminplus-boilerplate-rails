@@ -11,12 +11,9 @@
 // about supported directives.
 //
 
-
 //= require jquery
 //= require tether/dist/js/tether.min
 //= require bootstrap/dist/js/bootstrap.min
-//= require adminplus/dist/adminplus.js
-
-AdminPlus.Sidebar.init();
-AdminPlus.Scrollable();
-
+//= require simplebar/dist/simplebar.min
+//= require bootstrap-layout/dist/bootstrap-layout.js
+//= require bootstrap-layout-scrollable/dist/bootstrap-layout-scrollable.js

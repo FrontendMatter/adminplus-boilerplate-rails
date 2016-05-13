@@ -1,31 +1,40 @@
 <!DOCTYPE html>
-<html class="bootstrap-layout">
+<html>
 <head>
-  <title>Fixed Layout</title>
-  
-  <!-- Material Design Icons  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Roboto Web Font -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+	<title>adminplus-boilerplate-rails demo</title>
 
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<!-- Prevent the demo from appearing in search engines (REMOVE THIS) -->
+	<meta name="robots" content="noindex">
   
-  <%= csrf_meta_tags %>
+	<!-- Material Design Icons  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Roboto Web Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+
+	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+
+	<%= csrf_meta_tags %>
 
 </head>
 <body class="layout-container ls-top-navbar">
 
 	<!-- Navbar -->
-	<nav class="navbar navbar-dark bg-primary navbar-full navbar-fixed-top ls-left-sidebar">    
+	<nav class="navbar navbar-dark bg-primary navbar-full navbar-fixed-top">
 		<div class="container">
+			
 			<!-- Brand -->
-			<a class="navbar-brand" href="index.html">AdminPlus</a>
+			<a class="navbar-brand" href="<%= root_path %>">Brand</a>
+
+			<!-- Collapse -->
 			<div class="collapse navbar-toggleable-xs" id="navbar">
 				<ul class="nav navbar-nav">
-					<li class="nav-item active"><a class="nav-link" href="/fixed">Fixed</a></li>
-					<li class="nav-item"><a class="nav-link" href="/">Sidebar</a></li>
+					<li class="nav-item active"><a class="nav-link" href="<%= root_path %>">Fixed</a></li>
+					<li class="nav-item"><a class="nav-link" href="<%= sidebar_path %>">Sidebar</a></li>
 				</ul>
 			</div>
+			<!-- // END Collapse -->
+
 		</div>
 	</nav>
 	<!-- // END Navbar -->
@@ -34,7 +43,6 @@
 	<div class="layout-content" data-scrollable>
 		<div class="container">
 			<%= yield %>
-			<!-- END CONTENT -->
 		</div>
 	</div>
 

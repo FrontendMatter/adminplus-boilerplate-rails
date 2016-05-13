@@ -2,10 +2,37 @@
  *= require_tree .
  */
 
+// Material Design Color Palette
 @import 'sass-md-colors/colors/variables';
+
+////////////////////////
+// VARIABLE OVERRIDES //
+////////////////////////
 
 $brand-primary: $indigo-500;
 
-@import 'adminplus/src/sass/variables';
+///////////////////////
+// DEFAULT VARIABLES //
+///////////////////////
 
-@import 'adminplus/src/sass/style';
+// AdminPlus Lite
+@import 'adminplus/sass/variables';
+
+// Bootstrap Layout
+@import 'bootstrap-layout/src/sass/variables';
+
+// Bootstrap Layout Scrollable
+@import 'bootstrap-layout-scrollable/src/sass/variables';
+
+///////////
+// STYLE //
+///////////
+
+// AdminPlus Lite
+@import 'adminplus/sass/style';
+
+// Bootstrap Layout
+@import 'bootstrap-layout/src/sass/style';
+
+// Bootstrap Layout Scrollable
+@import 'bootstrap-layout-scrollable/src/sass/style';

@@ -1,7 +1,8 @@
  class StaticController < ApplicationController
-  def home
+  def sidebar
+  	render action: "content"
   end
   def fixed
-    render action: "fixed", layout: "fixed"
+    render action: "content", layout: "fixed"
   end
 end

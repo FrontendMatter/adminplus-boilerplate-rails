@@ -42,3 +42,11 @@ group :development do
   gem 'web-console', '~> 2.0'
 end
 
+# Heroku gems
+gem 'rails_12factor', group: :production
+
+# Ruby version
+ruby '2.3.1'
+
+# Webserver
+gem 'puma'
